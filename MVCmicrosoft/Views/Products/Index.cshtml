@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MVCmicrosoft.Models.ProductModel>
+
+<h2>Products List</h2>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Name (@product.Price)</li>
+    }
+</ul>
+
+<a asp-action="Create">Create another product</a>
