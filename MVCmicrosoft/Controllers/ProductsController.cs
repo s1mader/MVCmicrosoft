@@ -16,6 +16,7 @@ public class ProductsController : Controller
 
         return View();
     }
+    [HttpGet]
     public IActionResult Index()
     {
         var products = _context.Products.ToList();
